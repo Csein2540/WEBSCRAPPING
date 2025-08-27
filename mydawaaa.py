@@ -16,11 +16,11 @@ driver = webdriver.Chrome(service=service, options=options)
 
 # --- Category URLs and Labels ---
 categories={
-    "Pain Relief Management": "https://mydawa.com/products/medical-conditions/pain-reliefmanagement",
-    "Eye Care": "https://mydawa.com/products/medical-conditions/eye-care",
-    "Diabetes": "https://mydawa.com/products/medical-conditions/diabetes",
-    "Cough Cold & Flu": "https://mydawa.com/products/medical-conditions/cough-cold-flu",
-    "Digestive Health": "https://mydawa.com/products/medical-conditions/stomach-care-digestive-health",
+    #"Pain Relief Management": "https://mydawa.com/products/medical-conditions/pain-reliefmanagement",
+    #"Eye Care": "https://mydawa.com/products/medical-conditions/eye-care",
+    #"Diabetes": "https://mydawa.com/products/medical-conditions/diabetes",
+    #"Cough Cold & Flu": "https://mydawa.com/products/medical-conditions/cough-cold-flu",
+    #"Digestive Health": "https://mydawa.com/products/medical-conditions/stomach-care-digestive-health",
     "Blood Pressure Apparatus": "https://mydawa.com/products/medical-devices/diagnostics/blood-pressure-monitors"
 }
 
@@ -104,5 +104,4 @@ df.to_csv("mydawa_products.csv", index=False)
 print("\n✅ All data saved to 'mydawa_products.csv'.")
 
 # --- Clean up ---
-
 driver.quit()
